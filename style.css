@@ -1,3 +1,6 @@
+html, body {
+    height: 100%;
+}
 body {
     background-color: cornflowerblue;
     display: flex;
@@ -5,9 +8,35 @@ body {
     align-items: center;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color:rebeccapurple;
+    
+}
+
 .game {
     height: 300px;
     width: 300px;
     background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
+}
+
+.box {
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.box:nth-child(3n) {
+    border-right: none;
+}
+
+.box:nth-child(n + 7) {
+    border-bottom: none;
 }
