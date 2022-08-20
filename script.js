@@ -1,4 +1,5 @@
 let box = document.querySelectorAll(".box");
+let showWinner = document.getElementById("winner")
 box = Array.from(box);
 
 let player = "x";
@@ -17,7 +18,9 @@ function checkWin() {
   winningConditions.forEach(function (condition) {
     let check = condition.every((index) => box[index].innerText == player);
     if (check) {
-      alert(player + "Has Won!");
+        showWinner.innerText = player + "-" + "has won!"
+        showWinner.classList.remove('hide')
+      console.log("game over");
     }
   });
 }
