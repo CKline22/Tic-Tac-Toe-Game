@@ -1,47 +1,45 @@
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 body {
-    background-color: cornflowerblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
 }
 
 header {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
-    color:rebeccapurple;
-    
+  color: rebeccapurple;
 }
 
 .game {
-    height: 300px;
-    width: 300px;
-    background-color: grey;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-
+  height: 300px;
+  width: 300px;
+  background-color: grey;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .box {
-    border-bottom: 5px solid black;
-    border-right: 5px solid black;
-    text-align: center;
-    line-height: 95px;
-    font-size: xx-large;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  text-align: center;
+  line-height: 95px;
+  font-size: xx-large;
 }
 
-
 .box:nth-child(3n) {
-    border-right: none;
+  border-right: none;
 }
 
 .box:nth-child(n + 7) {
-    border-bottom: none;
+  border-bottom: none;
 }
