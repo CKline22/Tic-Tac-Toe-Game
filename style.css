@@ -11,7 +11,7 @@ body {
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 header {
@@ -26,17 +26,17 @@ h1 {
 }
 
 .text {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #winner {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
 .game {
