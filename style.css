@@ -37,6 +37,7 @@ h1 {
     font-size: xx-large;
 }
 
+
 .box:nth-child(3n) {
     border-right: none;
 }

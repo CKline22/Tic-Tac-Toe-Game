@@ -1,14 +1,7 @@
-let score = document.querySelectorAll('.score')
 let box = document.querySelectorAll('.box')
  box = Array.from(box)
 
  let player = "x"
-
- let gameScore = 0
-
- function currentScore () {
-    let playerScore = score.innerText + gameScore
- }
 
 winningConditions = [
     [0,1,2],
@@ -25,7 +18,6 @@ function checkWin () {
         let check = condition.every(index => box[index].innerText == player)
         if (check){
             alert(player + "Has Won!")
-            gameScore ++
         }
     })
 }
